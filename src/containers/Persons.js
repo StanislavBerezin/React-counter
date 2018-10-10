@@ -7,20 +7,7 @@ import * as actionTypes from '../store/actions';
 
 class Persons extends Component {
     
-    render () {
-        return (
-            <div>
-                <AddPerson personAdded={this.props.onAddedPerson} />
-                {this.props.prs.map(person => (
-                    <Person 
-                        key={person.id}
-                        name={person.name} 
-                        age={person.age} 
-                        clicked={() => this.props.onRemovedPerson(person.id)}/>
-                ))}
-            </div>
-        );
-    }
+    
 }
 
 const mapStateToProps = state => {
